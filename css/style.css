@@ -1,0 +1,97 @@
+* {
+	font-family: 'Noto Sans', sans-serif;
+	padding: 5px;
+	
+}
+
+body {
+
+}
+
+/*VARIABLES*/
+
+:root {
+	--main-bg-width: 100%;
+	--margin-bg-div: auto;
+	--margin-bg-color: #272727;
+	--font-bg-tamano: 2.3vh;
+	--font-secondary-tamano: 3.3vh;
+	--color-secondary: white;
+	--color-third: #29581e;
+
+}
+
+div,
+section {
+	width: var(--main-bg-width);
+	margin: var(--margin-bg-div);
+	font-size: var(--font-bg-tamano);
+
+}
+
+/* HOME */
+.hero-image {
+	/* OPACIDAD */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/portada_axel.jpg");
+  
+	/* TAMAÑO */
+	height: 100%;
+	width: 100%;
+  
+	/* LA POSICION */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+	text-align: right;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-60%, -60%);
+	color: white;
+  }
+
+  h1{
+	font-size: 7vh;
+	text-align: right;
+  }
+
+  /* links */
+img{
+	margin: 5px;
+}
+  a{
+	color: var(--color-third);	  
+  }
+
+  /* FOOTER */
+
+footer{
+background-color: #272727;
+width: 100%;
+}
+
+.footer_cr_2{
+	font-size: 2vh;
+	text-align: center;
+}
+
+
+
+/* 	QUERIES */
+
+@media (max-width: 575.98px) { 
+
+	.hero-image {
+		
+		/* TAMAÑO */
+		height: 90%;
+		width: 100%;
+	  }
+
+
+}
